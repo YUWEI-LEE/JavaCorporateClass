@@ -11,7 +11,7 @@ class AfternoonTeaServiceImplTest {
 	@Test
 	void testGetByItemNo() {
 		AfternoonTeaService service = new AfternoonTeaServiceImpl();
-		Drinks drink = service.getByItemNo("1");
+		Drinks drink = service.getByOrderNo("1");
 		assertEquals("green tea",drink.getDrinkName());
 		
 	}

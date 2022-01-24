@@ -2,7 +2,7 @@ package tw.com.fcb.AfternoonTea;
 
 public class Drinks {
 
-	private String itemNo;
+	private String orderNo;
 	
 	private String drinkName;
 	
@@ -16,12 +16,19 @@ public class Drinks {
 
 	
 	
-	public String getItemNo() {
-		return itemNo;
+
+	@Override
+	public String toString() {
+		return "Drinks [orderNo=" + orderNo + ", drinkName=" + drinkName + ", number=" + number + ", price=" + price
+				+ ", ice=" + ice + ", sweetness=" + sweetness + "]";
 	}
 
-	public void setItemNo(String itemNo) {
-		this.itemNo = itemNo;
+	public String getOrderNo() {
+		return orderNo;
+	}
+
+	public void setOrderNo(String orderNo) {
+		this.orderNo = orderNo;
 	}
 
 	public String getDrinkName() {
